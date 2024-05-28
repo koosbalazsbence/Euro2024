@@ -1,20 +1,24 @@
 import React from "react"
-import { lazy } from "react"
+import { lazy } from "react" // TODO
+import "../public/json/cards.json" // Importing the JSON file
 import Navbar from "../components/Navbar"
 import Card from "../components/Card"
+import MusicPlayer from "../components/MusicPlayer"
 import Footer from "../components/Footer"
 
 const Home = () => {
   return (
     <>
-      <div className="select-none p-4">
+      <div className="select-none p-4 font-montserrat">
         <Navbar />
-        <h1 className="delay-250 mb-4 text-center font-montserrat text-4xl font-semibold text-white transition ease-in-out hover:text-gray-900">
+        <h1 className="delay-250 mb-4 text-center text-4xl font-semibold text-clr-whiteish transition ease-in-out hover:text-gray-900">
           2024-es labdarúgó-Európa-bajnokság
         </h1>
         <hr className="my-8 h-px border-0 bg-[#C2BDBD]" />
-        <div className="mx-auto mt-16 w-3/4 text-center">
-          <h2>Welcome to Euro 2024!</h2>
+        <div className="mx-auto mt-12 w-3/4 text-center text-clr-whiteish">
+          <h2 className="pb-8 text-5xl font-extrabold">
+            Welcome to Euro 2024!
+          </h2>
           <p>
             Get ready for an unforgettable journey as the best football teams
             from across Europe come together to compete for the prestigious
@@ -29,6 +33,7 @@ const Home = () => {
             enjoying the beautiful game, Euro 2024 is set to be a celebration of
             football at its finest.
           </p>
+          <br />
           <p>
             Stay tuned for the latest updates, match schedules, team profiles,
             and exclusive behind-the-scenes content. Join us as we countdown to
@@ -41,6 +46,7 @@ const Home = () => {
           <Card></Card>
           <Card></Card>
         </div>
+        <MusicPlayer></MusicPlayer>
       </div>
       <Footer></Footer>
     </>

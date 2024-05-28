@@ -1,1 +1,5 @@
-[]
+{
+    "defaultCardHeading": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "defaultCardParagraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, quaerat. Culpa totam voluptatibus animi veritatis quaerat a suscipit cumque alias inventore illo?",
+    "defaultCardButton": "Lorem ipsum"
+}

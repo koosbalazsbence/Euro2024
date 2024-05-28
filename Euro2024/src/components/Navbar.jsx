@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar mb-8 mt-4 font-montserrat">
-        <ul className="flex items-center justify-center gap-6 text-xl font-bold">
+        <ul className="navbar-list flex items-center justify-center gap-6 text-xl font-bold">
           <li>
             <Link to="/">
               <img
@@ -31,6 +31,9 @@ const Navbar = () => {
           </li>
           {/* TRICOLOR */}
         </ul>
+        <span className="absolute right-10 top-[2.80rem]">
+          <button>Change language</button>
+        </span>
       </div>
     </>
   )
