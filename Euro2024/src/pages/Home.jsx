@@ -7,13 +7,13 @@ import Footer from "../components/Footer"
 const Home = () => {
   return (
     <>
-      <div className="bg-[--clr-bg-blue] h-screen p-4 select-none">
+      <div className="select-none p-4">
         <Navbar />
-        <h1 className="text-center text-4xl font-montserrat text-white font-semibold hover:text-gray-900 transition ease-in-out delay-250 mb-4">
+        <h1 className="delay-250 mb-4 text-center font-montserrat text-4xl font-semibold text-white transition ease-in-out hover:text-gray-900">
           2024-es labdarúgó-Európa-bajnokság
         </h1>
-        <hr className="h-px my-8 bg-[#C2BDBD] border-0" />
-        <div className="text-center mt-16 mx-auto w-3/4">
+        <hr className="my-8 h-px border-0 bg-[#C2BDBD]" />
+        <div className="mx-auto mt-16 w-3/4 text-center">
           <h2>Welcome to Euro 2024!</h2>
           <p>
             Get ready for an unforgettable journey as the best football teams
@@ -36,12 +36,13 @@ const Home = () => {
             2024!
           </p>
         </div>
-        <div className="flex justify-center items-center gap-10 h-4/6">
+        <div className="m-10 flex items-center justify-center gap-10">
           <Card></Card>
           <Card></Card>
           <Card></Card>
         </div>
       </div>
+      <Footer></Footer>
     </>
   )
 }

@@ -1,0 +1,17 @@
+@import "_frames";
+
+@media screen and (max-width: map-get($breakpoints, "mobile")) {
+}
+@media screen and (max-width: map-get($breakpoints, "mobile_landscape")) {
+}
+@media screen and (max-width: map-get($breakpoints, "tablet")) {
+    .footer{
+        position: relative;
+    }
+}
+@media screen and (max-width: map-get($breakpoints, "tablet_landscape")) {
+}
+@media screen and (max-width: map-get($breakpoints, "laptop")) {
+}
+@media screen and (max-width: map-get($breakpoints, "desktop")) {
+}

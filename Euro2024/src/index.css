@@ -11,6 +11,8 @@
   /* color code variables */
   --clr-bg-blue: #143cdb;
   --clr-footer-bg-blue: #14256a;
+  --clr-whiteish: #e9e9e9;
+  --clr-hover-white: #fff;
 
   /* font family variables */
   --ff-montserrat: "Montserrat", sans-serif;
@@ -41,4 +43,8 @@
   background-color: #e9eef1;
   border-radius: 10px;
   border: 3px solid #ffffff;
+}
+
+body{
+  background: var(--clr-bg-blue);
 }

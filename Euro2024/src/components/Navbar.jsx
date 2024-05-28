@@ -1,16 +1,35 @@
 import React from "react"
+import { Link } from "react-router-dom"
+import "./Navbar.css"
 
 const Navbar = () => {
   return (
     <>
-      <div className="font-montserrat mb-8 mt-4">
-        <ul className="flex justify-center items-center gap-6 text-xl">
-            <li><a href=""><img src="../../assets/euro-2024-logo.png" alt="" title="" className="h-12 w-12 no-underline" /></a></li>
-            <li><a href="" className="hover:underline">Groups</a></li>
-            <li><a href="" className="hover:underline">Teams</a></li>
-            <li><a href="" className="hover:underline">Events</a></li>
-            <li><a href="" className="hover:underline">Hungary</a></li>
-            {/* TRICOLOR */}
+      <div className="navbar mb-8 mt-4 font-montserrat">
+        <ul className="flex items-center justify-center gap-6 text-xl font-bold">
+          <li>
+            <Link to="/">
+              <img
+                src="../../assets/euro-2024-logo.png"
+                alt=""
+                title=""
+                className="h-12 w-12 no-underline"
+              />
+            </Link>
+          </li>
+          <li className="navbar-list-item">
+            <Link to="/Groups">Groups</Link>
+          </li>
+          <li className="navbar-list-item">
+            <Link to="/Teams">Teams</Link>
+          </li>
+          <li className="navbar-list-item">
+            <Link to="/Events">Events</Link>
+          </li>
+          <li className="navbar-list-item">
+            <Link to="/Hungary">Hungary</Link>
+          </li>
+          {/* TRICOLOR */}
         </ul>
       </div>
     </>
