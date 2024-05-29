@@ -1,1 +1,10 @@
-[]
+{
+  "navbarItemGroups": "Csoportok",
+  "navbarItemTeams": "Csapatok",
+  "navbarItemEvents": "Helyszínek",
+  "navbarItemHungary": "Magyarország",
+
+  
+  "homeHeading": "2024-es labdarúgó-Európa-bajnokság",
+  "homeBellowHeading": "Üdvüzlöm a 2024-es Európa-bajnokságon"
+}
