@@ -1,0 +1,24 @@
+{
+    "countries": [
+      {"name": "Austria", "flag_url": ""},
+      {"name": "Belgium", "flag_url": ""},
+      {"name": "Croatia", "flag_url": ""},
+      {"name": "Czech Republic", "flag_url": ""},
+      {"name": "Denmark", "flag_url": ""},
+      {"name": "England", "flag_url": ""},
+      {"name": "Finland", "flag_url": ""},
+      {"name": "France", "flag_url": ""},
+      {"name": "Germany", "flag_url": ""},
+      {"name": "Italy", "flag_url": ""},
+      {"name": "Netherlands", "flag_url": ""},
+      {"name": "Portugal", "flag_url": ""},
+      {"name": "Russia", "flag_url": ""},
+      {"name": "Spain", "flag_url": ""},
+      {"name": "Sweden", "flag_url": ""},
+      {"name": "Switzerland", "flag_url": ""},
+      {"name": "Turkey", "flag_url": ""},
+      {"name": "Ukraine", "flag_url": ""},
+      {"name": "Wales", "flag_url": ""}
+    ]
+  }
+  

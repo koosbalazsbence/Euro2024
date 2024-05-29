@@ -1,16 +1,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 import "../public/json/cards.json"
+import cardsData from "../public/json/cards.json"
 import { Link } from "react-router-dom"
 
-const Card = ({ imgSrc, heading, paragraph, buttonLabel, onButtonClick }) => {
+const Card = ({ imgSrc, heading, paragraph, buttonLabel, path }) => {
   return (
-    <div className="max-w-sm rounded-lg border border-[--clr-whiteish] bg-[--clr-whiteish] shadow dark:border-gray-700 dark:bg-gray-800">
-      <Link to="/">
+    <div className="max-w-sm rounded-lg border border-[--clr-whiteish] bg-[--clr-whiteish] shadow dark:border-gray-700 dark:bg-gray-800 min-h-[600]">
+      <Link to={path}>
         <img className="mx-auto rounded-t-lg" src={imgSrc} alt="Card image" />
       </Link>
       <div className="p-5">
-        <Link to="/">
+        <Link to={path}>
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {heading}
           </h5>
@@ -19,9 +20,8 @@ const Card = ({ imgSrc, heading, paragraph, buttonLabel, onButtonClick }) => {
           {paragraph}
         </p>
         <Link
-          to="/"
+          to={path}
           className="inline-flex items-center rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white transition ease-in-out hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          onClick={onButtonClick}
         >
           {" "}
           {buttonLabel}
@@ -56,10 +56,9 @@ Card.propTypes = {
 
 Card.defaultProps = {
   imgSrc: "../assets/euro-2024-logo.png",
-  heading: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  paragraph:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, quaerat. Culpa totam voluptatibus animi veritatis quaerat a suscipit cumque alias inventore illo?",
-  buttonLabel: "Lorem ipsum",
+  heading: cardsData.defaultCardHeading,
+  paragraph: cardsData.defaultCardParagraph,
+  buttonLabel: cardsData.defaultCardButton,
   onButtonClick: () => {},
 }
 

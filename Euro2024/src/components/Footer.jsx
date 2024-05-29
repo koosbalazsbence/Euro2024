@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa"
 const Footer = () => {
   return (
     <>
-      <div className="footer relative bottom-0 left-0 right-0 mt-4 select-none bg-[--clr-footer-bg-blue] p-4 pb-4 text-center font-montserrat font-semibold text-gray-500">
+      <div className="footer relative bottom-0 left-0 right-0 mt-4 select-none bg-[--clr-footer-bg-blue] p-4 pb-2 text-center font-montserrat font-semibold text-gray-500">
         <h2 className="mb-1">
           Offical Euro 2024 website:
           <Link
