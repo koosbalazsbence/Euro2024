@@ -17,7 +17,7 @@ const Groups = () => {
 
   return (
     <>
-      <div className="mb-4 font-montserrat">
+      <div className="mb-4 select-none font-montserrat">
         <Navbar></Navbar>
         <h1 className="delay-250 mb-4 w-full text-center text-4xl font-semibold text-clr-whiteish transition ease-in-out hover:text-gray-900">
           {t("homeHeading")}

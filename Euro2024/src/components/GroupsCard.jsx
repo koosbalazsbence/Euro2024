@@ -16,6 +16,7 @@ const GroupsCard = ({ imgSrc, heading, paragraph, buttonLabel, path }) => {
       } catch (error) {
         console.error("Error fetching data:", error)
       }
+      console.log(nations.countries)
     }
 
     fetchData()

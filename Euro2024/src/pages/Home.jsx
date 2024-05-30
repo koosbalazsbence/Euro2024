@@ -8,14 +8,11 @@ const cardsData = import("../public/json/cards.json")
 
 const Navbar = lazy(() => import("../components/Navbar"))
 const Card = lazy(() => import("../components/Card"))
-const MusicPlayer = lazy(() => import("../components/MusicPlayer"))
 const Footer = lazy(() => import("../components/Footer"))
 
-const Home = () => {
-  const handleButtonClick = () => {
-    alert("Button clicked!")
-  }
+// const MusicPlayer = lazy(() => import("../components/MusicPlayer"))
 
+const Home = () => {
   const { t, i18n } = useTranslation()
 
   const changeLanguage = (lng) => {
