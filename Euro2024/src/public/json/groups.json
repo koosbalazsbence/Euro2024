@@ -1,0 +1,40 @@
+{
+  "groups": {
+    "Group A": [
+      { "name": "Austria", "flagUrl": "" },
+      { "name": "Belgium", "flagUrl": "" },
+      { "name": "Croatia", "flagUrl": "" },
+      { "name": "Czech Republic", "flagUrl": "" }
+    ],
+    "Group B": [
+      { "name": "Denmark", "flagUrl": "" },
+      { "name": "England", "flagUrl": "" },
+      { "name": "Finland", "flagUrl": "" },
+      { "name": "France", "flagUrl": "" }
+    ],
+    "Group C": [
+      { "name": "Germany", "flagUrl": "" },
+      { "name": "Italy", "flagUrl": "" },
+      { "name": "Netherlands", "flagUrl": "" },
+      { "name": "Portugal", "flagUrl": "" }
+    ],
+    "Group D": [
+      { "name": "Russia", "flagUrl": "" },
+      { "name": "Spain", "flagUrl": "" },
+      { "name": "Sweden", "flagUrl": "" },
+      { "name": "Switzerland", "flagUrl": "" }
+    ],
+    "Group E": [
+      { "name": "Turkey", "flagUrl": "" },
+      { "name": "Ukraine", "flagUrl": "" },
+      { "name": "Wales", "flagUrl": "" },
+      { "name": "Austria", "flagUrl": "" }
+    ],
+    "Group F": [
+      { "name": "Belgium", "flagUrl": "" },
+      { "name": "Croatia", "flagUrl": "" },
+      { "name": "Czech Republic", "flagUrl": "" },
+      { "name": "Denmark", "flagUrl": "" }
+    ]
+  }
+}

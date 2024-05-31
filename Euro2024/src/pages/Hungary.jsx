@@ -15,7 +15,6 @@ const Hungary = () => {
       <div className="">
         <Navbar></Navbar>
         <div className="flex justify-center items-center">
-          <Login></Login>
         </div>
       </div>
     </>

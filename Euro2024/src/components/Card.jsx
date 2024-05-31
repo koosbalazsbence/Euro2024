@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 const Card = ({ imgSrc, heading, paragraph, buttonLabel, path }) => {
   return (
-    <div className="max-w-sm rounded-lg border border-[--clr-whiteish] bg-[--clr-whiteish] shadow dark:border-gray-700 dark:bg-gray-800 min-h-[600]">
+    <div className="min-h-[600] max-w-sm rounded-lg border border-[--clr-whiteish] bg-[--clr-whiteish] shadow dark:border-gray-700 dark:bg-gray-800">
       <Link to={path}>
         <img className="mx-auto rounded-t-lg" src={imgSrc} alt="Card image" />
       </Link>

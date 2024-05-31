@@ -1,5 +1,4 @@
 import React from "react"
-import { lazy } from "react"
 import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import Groups from "./pages/Groups"
