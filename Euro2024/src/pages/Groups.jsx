@@ -45,39 +45,76 @@ const Groups = () => {
             </div>
           </Suspense>
         </DelayedComponent>
-        <div className="m-8 mx-auto grid w-5/6 grid-cols-3 grid-rows-2 gap-x-px gap-y-8">
+
+        <div className="m-8 mx-10 grid grid-cols-1 content-center gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <DelayedComponent delay={800}>
             <Suspense fallback={<Loading />}>
-              <div className="flex justify-center align-middle">
-                <GroupsCard
-                  groupHeading="Group A"
-                />
-              </div>
-              <div className="flex justify-center align-middle">
-                <GroupsCard
-                  groupHeading="Group B"
-                />
-              </div>
-              <div className="flex justify-center align-middle">
-                <GroupsCard
-                  groupHeading="Group C"
-                />
-              </div>
-              <div className="flex justify-center align-middle">
-                <GroupsCard
-                  groupHeading="Group D"
-                />
-              </div>
-              <div className="flex justify-center align-middle">
-                <GroupsCard
-                  groupHeading="Group E"
-                />
-              </div>
-              <div className="flex justify-center align-middle">
-                <GroupsCard
-                  groupHeading="Group F"
-                />
-              </div>
+              <GroupsCard
+                groupHeading="Group A"
+                firstTeamPicture="../../assets/flags_folder/mini_flag_germany.png"
+                secondTeamPicture="../../assets/flags_folder/mini_flag_hungary.png"
+                thirdTeamPicture="../../assets/flags_folder/mini_flag_scotland.png"
+                fourthTeamPicture="../../assets/flags_folder/mini_flag_switzerland.png"
+                firstTeamName="Germany"
+                secondTeamName="Hungary"
+                thirdTeamName="Scotland"
+                fourthTeamName="Switzerland"
+              />
+              <GroupsCard
+                groupHeading="Group B"
+                firstTeamPicture="../../assets/flags_folder/mini_flag_spain.png"
+                secondTeamPicture="../../assets/flags_folder/mini_flag_croatia.png"
+                thirdTeamPicture="../../assets/flags_folder/mini_flag_italy.png"
+                fourthTeamPicture="../../assets/flags_folder/mini_flag_switzerland.png"
+                firstTeamName="Spain"
+                secondTeamName="Croatia"
+                thirdTeamName="Italy"
+                fourthTeamName="Albania"
+              />
+              <GroupsCard
+                groupHeading="Group C"
+                firstTeamPicture="../../assets/flags_folder/mini_flag_slovenia.png"
+                secondTeamPicture="../../assets/flags_folder/mini_flag_denmark.png"
+                thirdTeamPicture="../../assets/flags_folder/mini_flag_serbia.png"
+                fourthTeamPicture="../../assets/flags_folder/mini_flag_england.png"
+                firstTeamName="Slovenia"
+                secondTeamName="Denmark"
+                thirdTeamName="Serbia"
+                fourthTeamName="England"
+              />
+              <GroupsCard
+                groupHeading="Group D"
+                firstTeamPicture="../../assets/flags_folder/mini_flag_netherlands.png"
+                secondTeamPicture="../../assets/flags_folder/mini_flag_france.png"
+                thirdTeamPicture="../../assets/flags_folder/mini_flag_poland.png"
+                fourthTeamPicture="../../assets/flags_folder/mini_flag_austria.png"
+                firstTeamName="Netherlands"
+                secondTeamName="France"
+                thirdTeamName="Poland"
+                fourthTeamName="Austria"
+              />
+              <GroupsCard
+                groupHeading="Group E"
+                firstTeamPicture="../../assets/flags_folder/mini_flag_ukraine.png"
+                secondTeamPicture="../../assets/flags_folder/mini_flag_slovakia.png"
+                thirdTeamPicture="../../assets/flags_folder/mini_flag_belgium.png"
+                fourthTeamPicture="../../assets/flags_folder/mini_flag_romania.png"
+                firstTeamName="Ukraine"
+                secondTeamName="Slovakia"
+                thirdTeamName="Belgium"
+                fourthTeamName="Romania"
+              />
+              <GroupsCard
+                groupHeading="Group F"
+                firstTeamPicture="../../assets/flags_folder/mini_flag_portugal.png"
+                secondTeamPicture="../../assets/flags_folder/mini_flag_czechia.png"
+                thirdTeamPicture="../../assets/flags_folder/mini_flag_georgia.png"
+                fourthTeamPicture="../../assets/flags_folder/mini_flag_turkey.png"
+                firstTeamName="Portugal"
+                secondTeamName="Czechia"
+                thirdTeamName="Georgia"
+                fourthTeamName="Türkiye"
+              />
             </Suspense>
           </DelayedComponent>
         </div>

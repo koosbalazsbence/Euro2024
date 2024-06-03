@@ -19,7 +19,7 @@ const Footer = () => {
         </h2>
         <button>
           <Link to="https://github.com/koosbalazsbence" target="_blank">
-          <FaGithub className="size-8" />
+            <FaGithub className="size-8" />
           </Link>
         </button>
       </div>

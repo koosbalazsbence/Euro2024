@@ -1,27 +1,37 @@
 import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
 
-const GroupsCard = ({ group, groupHeading }) => {
-  const [countries, setCountries] = useState([])
+const GroupsCard = ({
+  groupHeading,
+  firstTeamPicture,
+  secondTeamPicture,
+  thirdTeamPicture,
+  fourthTeamPicture,
+  firstTeamName,
+  secondTeamName,
+  thirdTeamName,
+  fourthTeamName,
+}) => {
+  // const [countries, setCountries] = useState([])
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch("/json/groups.json")
-        if (!res.ok) {
-          throw new Error("Network response was not ok")
-        }
-        const data = await res.json()
-        setCountries(data.groups[group])
-      } catch (error) {
-        console.error("Error fetching data:", error)
-      }
-    }
-    fetchData()
-  }, [group])
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const res = await fetch("/json/groups.json")
+  //       if (!res.ok) {
+  //         throw new Error("Network response was not ok")
+  //       }
+  //       const data = await res.json()
+  //       setCountries(data.groups[group])
+  //     } catch (error) {
+  //       console.error("Error fetching data:", error)
+  //     }
+  //   }
+  //   fetchData()
+  // }, [group])
 
   return (
-    <div className="w-full max-w-md rounded-lg border border-gray-200 bg-white p-4 shadow dark:border-gray-700 dark:bg-gray-800 sm:p-8">
+    <div className="flex w-full flex-col justify-between rounded-lg border border-gray-200 bg-white p-4 shadow dark:border-gray-700 dark:bg-gray-800 sm:p-8">
       <div className="mb-4 flex items-center justify-between">
         <h5 className="text-xl font-semibold leading-none text-gray-900 dark:text-white">
           {groupHeading}
@@ -55,13 +65,13 @@ const GroupsCard = ({ group, groupHeading }) => {
               <div className="flex-shrink-0">
                 <img
                   className="h-8 w-8 rounded-full"
-                  src="../assets/mini_flag_germany.png"
+                  src={firstTeamPicture}
                   alt=""
                 />
               </div>
               <div className="ms-4 min-w-0 flex-1">
                 <p className="truncate text-sm font-medium text-gray-900 dark:text-white">
-                  Hungary
+                  {firstTeamName}
                 </p>
               </div>
             </div>
@@ -71,13 +81,13 @@ const GroupsCard = ({ group, groupHeading }) => {
               <div className="flex-shrink-0">
                 <img
                   className="h-8 w-8 rounded-full"
-                  src="../assets/mini_flag_hungary.png"
+                  src={secondTeamPicture}
                   alt=""
                 />
               </div>
               <div className="ms-4 min-w-0 flex-1">
                 <p className="truncate text-sm font-medium text-gray-900 dark:text-white">
-                  Hungary
+                  {secondTeamName}
                 </p>
               </div>
             </div>
@@ -87,13 +97,13 @@ const GroupsCard = ({ group, groupHeading }) => {
               <div className="flex-shrink-0">
                 <img
                   className="h-8 w-8 rounded-full"
-                  src="../assets/mini_flag_scotland.png"
+                  src={thirdTeamPicture}
                   alt=""
                 />
               </div>
               <div className="ms-4 min-w-0 flex-1">
                 <p className="truncate text-sm font-medium text-gray-900 dark:text-white">
-                  Hungary
+                  {thirdTeamName}
                 </p>
               </div>
             </div>
@@ -103,13 +113,13 @@ const GroupsCard = ({ group, groupHeading }) => {
               <div className="flex-shrink-0">
                 <img
                   className="h-8 w-8 rounded-full"
-                  src="../assets/mini_flag_switzerland.png"
+                  src={fourthTeamPicture}
                   alt=""
                 />
               </div>
               <div className="ms-4 min-w-0 flex-1">
                 <p className="truncate text-sm font-medium text-gray-900 dark:text-white">
-                  Hungary
+                  {fourthTeamName}
                 </p>
               </div>
             </div>
@@ -122,7 +132,14 @@ const GroupsCard = ({ group, groupHeading }) => {
 
 GroupsCard.propTypes = {
   groupHeading: PropTypes.string.isRequired,
-  teamPicture: PropTypes.string.isRequired,
+  firstTeamPicture: PropTypes.string.isRequired,
+  secondTeamPicture: PropTypes.string.isRequired,
+  thirdTeamPicture: PropTypes.string.isRequired,
+  fourthTeamPicture: PropTypes.string.isRequired,
+  firstTeamName: PropTypes.string.isRequired,
+  secondTeamName: PropTypes.string.isRequired,
+  thirdTeamName: PropTypes.string.isRequired,
+  fourthTeamName: PropTypes.string.isRequired,
 }
 
 export default GroupsCard

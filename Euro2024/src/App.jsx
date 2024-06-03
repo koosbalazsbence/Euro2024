@@ -6,7 +6,6 @@ import Teams from "./pages/Teams"
 import Events from "./pages/Events"
 import Hungary from "./pages/Hungary"
 
-
 function App() {
   return (
     <>

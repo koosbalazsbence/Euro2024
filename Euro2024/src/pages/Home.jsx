@@ -39,13 +39,12 @@ const Home = () => {
               </h2>
               <p>{t("homeParagraphFirst")}</p>
               {t("homeParagraphSecond")}
-              <p></p>
               <br />
               <p>{t("homeParagraphThird")}</p>
             </div>
           </Suspense>
         </DelayedComponent>
-        <div className="m-10 flex items-center justify-center gap-10">
+        <div className="m-10 flex flex-wrap items-center justify-center gap-10 p-0">
           <DelayedComponent delay={800}>
             <Suspense fallback={<Loading />}>
               <Card

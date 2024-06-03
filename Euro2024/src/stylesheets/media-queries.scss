@@ -1,8 +1,17 @@
 @import "_frames";
 
 @media screen and (max-width: map-get($breakpoints, "mobile")) {
+    .navbar *{
+        display: none;
+    }
 }
 @media screen and (max-width: map-get($breakpoints, "mobile_landscape")) {
+    .navbar *{
+        font-size: .75rem;
+    }
+    .lng-icon{
+        display: none;
+    }
 }
 @media screen and (max-width: map-get($breakpoints, "tablet")) {
 }
@@ -11,7 +20,4 @@
 @media screen and (max-width: map-get($breakpoints, "laptop")) {
 }
 @media screen and (max-width: map-get($breakpoints, "desktop")) {
-    .footer{
-        position: relative;
-    }
 }

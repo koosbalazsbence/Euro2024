@@ -25,21 +25,22 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="navbar-list-item">
-            <Link to="/Groups">{t('navbarItemGroups')}</Link>
+            <Link to="/Groups">{t("navbarItemGroups")}</Link>
           </li>
           <li className="navbar-list-item">
-            <Link to="/Teams">{t('navbarItemTeams')}</Link>
+            <Link to="/Teams">{t("navbarItemTeams")}</Link>
           </li>
           <li className="navbar-list-item">
-            <Link to="/Events">{t('navbarItemEvents')}</Link>
+            <Link to="/Events">{t("navbarItemEvents")}</Link>
           </li>
           <li className="navbar-list-item">
-            <Link to="/Hungary">{t('navbarItemHungary')}</Link>
+            <Link to="/Hungary">{t("navbarItemHungary")}</Link>
           </li>
         </ul>
-        <span className="absolute right-10 top-10 w-8">
+        <span className="lng-icon absolute right-10 top-10 w-8">
           <button>
-            <img src="../../assets/hungary.png" alt="" />
+            <img src="../../assets/united-kingdom.png" alt="" />
+            {/* <img src="../../assets/hungary.png" alt="" /> */}
           </button>
         </span>
 
