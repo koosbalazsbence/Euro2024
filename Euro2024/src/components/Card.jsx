@@ -53,13 +53,4 @@ Card.propTypes = {
   path: PropTypes.string,
 }
 
-Card.defaultProps = {
-  imgSrc: "../assets/euro-2024-logo.png",
-  heading: cardsData.defaultCardHeading,
-  paragraph: cardsData.defaultCardParagraph,
-  buttonLabel: cardsData.defaultCardButton,
-  onButtonClick: () => {},
-  path: cardsData.defaultCardPath,
-}
-
 export default Card

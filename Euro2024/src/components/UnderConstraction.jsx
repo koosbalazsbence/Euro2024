@@ -3,7 +3,7 @@ import React from "react"
 const UnderConstraction = () => {
   return (
     <>
-      <div className="my-[21rem] flex w-full justify-center font-montserrat text-3xl text-clr-whiteish">
+      <div className="my-[25rem] flex w-full justify-center font-montserrat text-3xl text-clr-whiteish">
         <h1>Under Construction!</h1>
       </div>
     </>

@@ -48,18 +48,21 @@ const Home = () => {
           <DelayedComponent delay={800}>
             <Suspense fallback={<Loading />}>
               <Card
+                imgSrc="../assets/euro-2024-logo.png"
                 heading={t("groupsCardHeading")}
                 paragraph={t("groupsCardParagraph")}
                 buttonLabel={t("groupsCardButton")}
                 path="/Groups"
               />
               <Card
+                imgSrc="../assets/euro-2024-logo.png"
                 heading={t("teamsCardHeading")}
                 paragraph={t("teamsCardParagraph")}
                 buttonLabel={t("teamsCardButton")}
                 path="/Teams"
               />
               <Card
+                imgSrc="../assets/euro-2024-logo.png"
                 heading={t("eventsCardHeading")}
                 paragraph={t("eventsCardParagraph")}
                 buttonLabel={t("eventsCardButton")}
